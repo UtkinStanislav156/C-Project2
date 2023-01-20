@@ -1,18 +1,33 @@
-﻿// Напишите программу, которая выводит третью цыфру заданного числа или сообщяет, что третьей цыфры нет.
-// 645-> 5
-// 78-> третьей цыфры нет
-// 32679-> 6
+﻿// Написать программу, которая принимает на вход цыфру обозначающую день недели и выявляющюю выходной
+// 6->да ; 7->да;  1->нет
 
 Console.WriteLine("Введите число ");
-int num = Convert.ToInt32(Console.ReadLine());
-if (num < 100)
+int a = Convert.ToInt32(Console.ReadLine());
+if (a == 1)
 {
- Console.Write($"нет третьей цыфры {num}");
- Environment.Exit(0);   
-} 
-while (num > 999)
-{
-    num = num / 10;
+Console.Write($"понедельник нет");
 }
-num = num % 10;
-Console.Write(num);
+if (a == 2)
+{
+Console.Write($"вторник нет");   
+}
+if (a == 3)
+{
+Console.Write($"среда нет");    
+}    
+if (a == 4)
+{
+Console.Write($"четверг нет");
+}
+if (a == 5)
+{
+Console.Write($"пятница нет");    
+}
+if (a == 6)
+{
+Console.Write($"суббота да");   
+}
+if (a == 7)
+{
+Console.Write($"воскресение да");    
+}
